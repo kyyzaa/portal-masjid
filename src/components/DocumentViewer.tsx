@@ -1,46 +1,8 @@
-import React, { useState } from 'react';
-import { Download, ChevronRight, RefreshCw } from 'lucide-react';
+import React from 'react';
+import { ChevronRight } from 'lucide-react';
 import { sermonData } from '../data/sermon';
 
 export const DocumentViewer: React.FC = () => {
-  const [exporting, setExporting] = useState<boolean>(false);
-
-  // Download pre-made PDF file (tauhid.pdf). Tries lowercase and capitalized filename.
-  const handleDownloadPdf = async () => {
-    setExporting(true);
-    try {
-      const candidates = ['/tauhid.pdf', '/Tauhid.pdf', '/Tauhid.PDF'];
-      let found = false;
-      for (const path of candidates) {
-        try {
-          const res = await fetch(path);
-          if (res.ok) {
-            const blob = await res.blob();
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'tauhid.pdf';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            URL.revokeObjectURL(url);
-            found = true;
-            break;
-          }
-        } catch (e) {
-          // continue to next candidate
-        }
-      }
-      if (!found) {
-        throw new Error('PDF file not found');
-      }
-    } catch (err) {
-      console.error('Failed to download PDF:', err);
-      alert('Gagal mengunduh PDF. Pastikan file tauhid.pdf berada di folder `public/` proyek.');
-    } finally {
-      setExporting(false);
-    }
-  };
 
   return (
     <section id="sermon-section" className="py-16 sm:py-24 px-4 bg-white text-slate-900 transition-all duration-300">
@@ -54,26 +16,7 @@ export const DocumentViewer: React.FC = () => {
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
         </div>
 
-        {/* Action Button: Download PDF */}
-        <div className="flex justify-center sm:justify-end no-print">
-          <button
-            onClick={handleDownloadPdf}
-            disabled={exporting}
-            className="flex items-center space-x-2.5 px-6 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-emerald-950 hover:text-emerald-950 font-bold rounded-2xl shadow-lg shadow-amber-500/20 hover:shadow-amber-500/35 transition-all hover:-translate-y-0.5 duration-300 disabled:opacity-50 disabled:pointer-events-none"
-          >
-            {exporting ? (
-              <>
-                <RefreshCw className="h-5 w-5 animate-spin" />
-                <span>Mengekspor PDF...</span>
-              </>
-            ) : (
-              <>
-                <Download className="h-5 w-5" />
-                <span>Unduh PDF Naskah</span>
-              </>
-            )}
-          </button>
-        </div>
+        {/* PDF download moved to homepage; remove button here */}
 
         {/* Document Render Container simplified: white background, no boxed card */}
         <div id="printable-content" className="relative z-10 p-6 sm:p-10 md:p-16 leading-relaxed text-left w-full mx-auto transition-all duration-300">

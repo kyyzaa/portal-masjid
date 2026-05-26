@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             <MapPin className="h-5 w-5 text-amber-400" />
             <div className="text-left">
               <p className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Lokasi Utama</p>
-              <p className="text-sm font-semibold">Masjid Az-Zumar</p>
+              <p className="text-sm font-semibold">Masjid Azzumar</p>
             </div>
           </div>
         </div>
@@ -51,10 +51,12 @@ export const Hero: React.FC = () => {
             Mulai Membaca Khutbah
           </a>
           <a
-            href="#sermon-section"
-            className="px-8 py-3.5 rounded-2xl font-bold border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all duration-300 w-full sm:w-auto"
+            href="/tauhid.pdf"
+            download
+            className="px-8 py-3.5 rounded-2xl font-bold bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all duration-300 w-full sm:w-auto flex items-center justify-center space-x-2"
           >
-            Informasi Shalat
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Unduh PDF Naskah</span>
           </a>
         </div>
       </div>

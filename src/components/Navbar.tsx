@@ -1,5 +1,6 @@
 import React from 'react';
-import { BookOpen, Award } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
+import Logo from '../assets/logo-removebg.png';
 
 export const Navbar: React.FC = () => {
   return (
@@ -7,15 +8,13 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center space-x-3">
-            <div className="p-2.5 bg-emerald-900/10 dark:bg-emerald-500/10 rounded-xl text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
-              <Award className="h-6 sm:h-7 w-6 sm:w-7 animate-pulse" />
-            </div>
+            <img src={Logo} alt="Masjid Az-Zumar" className="h-10 sm:h-12 w-10 sm:w-12 object-contain" />
             <div>
               <span className="font-serif text-lg sm:text-xl font-bold tracking-wider text-emerald-900 dark:text-emerald-100 flex items-center">
                 MASJID AZ-ZUMAR
               </span>
               <p className="text-[10px] sm:text-xs text-amber-600 dark:text-amber-400 font-semibold tracking-widest uppercase">
-                Digital Eid Announcement Board
+                Naskah Digital Khutbah Idul Adha
               </p>
             </div>
           </div>
