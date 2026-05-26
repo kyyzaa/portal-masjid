@@ -5,35 +5,38 @@ import { sermonData } from '../data/sermon';
 export const DocumentViewer: React.FC = () => {
   const [exporting, setExporting] = useState<boolean>(false);
 
-  // Elegant PDF Generation using html2pdf.js
+  // Download pre-made PDF file (tauhid.pdf). Tries lowercase and capitalized filename.
   const handleDownloadPdf = async () => {
     setExporting(true);
     try {
-      const html2pdf = (await import('html2pdf.js')).default;
-      const element = document.getElementById('printable-content');
-      if (!element) {
-        throw new Error('Element printable-content tidak ditemukan.');
+      const candidates = ['/tauhid.pdf', '/Tauhid.pdf', '/Tauhid.PDF'];
+      let found = false;
+      for (const path of candidates) {
+        try {
+          const res = await fetch(path);
+          if (res.ok) {
+            const blob = await res.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'tauhid.pdf';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+            found = true;
+            break;
+          }
+        } catch (e) {
+          // continue to next candidate
+        }
       }
-
-      const opt: any = {
-        margin: 15,
-        filename: 'Khutbah_Tauhid_dan_Cinta.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { 
-          scale: 2, 
-          useCORS: true, 
-          letterRendering: true,
-          scrollY: 0,
-          scrollX: 0
-        },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-      };
-
-      await html2pdf().set(opt).from(element).save();
+      if (!found) {
+        throw new Error('PDF file not found');
+      }
     } catch (err) {
-      console.error('Failed to export PDF:', err);
-      alert('Gagal mengekspor PDF. Silakan coba kembali.');
+      console.error('Failed to download PDF:', err);
+      alert('Gagal mengunduh PDF. Pastikan file tauhid.pdf berada di folder `public/` proyek.');
     } finally {
       setExporting(false);
     }

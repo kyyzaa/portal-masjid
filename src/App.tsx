@@ -32,7 +32,7 @@ export const App: React.FC = () => {
 
       <div className="relative z-10 flex flex-col min-h-screen w-full">
         {/* Navigation Bar */}
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar />
 
         {/* Core Sections */}
         <main className="flex-grow">

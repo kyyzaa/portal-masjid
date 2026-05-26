@@ -1,12 +1,7 @@
 import React from 'react';
-import { BookOpen, Moon, Sun, Award } from 'lucide-react';
+import { BookOpen, Award } from 'lucide-react';
 
-interface NavbarProps {
-  darkMode: boolean;
-  setDarkMode: (val: boolean) => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
+export const Navbar: React.FC = () => {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-[#111827]/70 border-b border-emerald-950/10 dark:border-emerald-100/10 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,15 +33,6 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
           </div>
 
           <div className="flex items-center space-x-3">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 sm:p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-emerald-900/10 dark:hover:bg-emerald-500/10 hover:text-emerald-700 dark:hover:text-emerald-400 border border-transparent hover:border-emerald-500/20 transition-all duration-300"
-              aria-label="Toggle Dark Mode"
-              id="theme-toggle"
-            >
-              {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
-            
             <a 
               href="#sermon-section"
               className="hidden sm:inline-flex items-center space-x-2 px-4 py-2 sm:px-5 sm:py-2.5 text-sm font-semibold rounded-xl text-white bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 shadow-md shadow-emerald-900/20 hover:shadow-emerald-900/30 transition-all hover:-translate-y-0.5 duration-300"
