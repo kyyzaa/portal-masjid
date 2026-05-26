@@ -3,7 +3,7 @@ import { Calendar, MapPin, Sparkles } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 text-white pt-16 sm:pt-20 pb-12 sm:pb-20 px-4 transition-all duration-300">
+    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 text-white pt-6 sm:pt-8 pb-12 sm:pb-20 px-4 transition-all duration-300">
       {/* Subtle vector stars/crescents grid in background */}
       <div className="absolute inset-0 bg-islamic-pattern opacity-10 pointer-events-none"></div>
       
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
             className="px-8 py-3.5 rounded-2xl font-bold bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all duration-300 w-full sm:w-auto flex items-center justify-center space-x-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span>Unduh PDF Naskah</span>
+            <span>Unduh Teks Khutbah</span>
           </a>
         </div>
       </div>

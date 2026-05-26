@@ -8,13 +8,7 @@ export const DocumentViewer: React.FC = () => {
     <section id="sermon-section" className="py-16 sm:py-24 px-4 bg-white text-slate-900 transition-all duration-300">
       <div className="max-w-6xl mx-auto space-y-10">
         
-        {/* Section Header */}
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl sm:text-5xl font-bold font-serif text-emerald-950">
-            Naskah Khutbah Eid
-          </h2>
-          <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
-        </div>
+        {/* Section header removed per request */}
 
         {/* PDF download moved to homepage; remove button here */}
 
