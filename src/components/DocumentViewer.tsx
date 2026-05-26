@@ -43,16 +43,12 @@ export const DocumentViewer: React.FC = () => {
   };
 
   return (
-    <section id="sermon-section" className="py-16 sm:py-24 px-4 bg-slate-100 dark:bg-[#0b0f19] text-slate-800 dark:text-slate-200 transition-all duration-300">
-      <div className="max-w-5xl mx-auto space-y-10">
+    <section id="sermon-section" className="py-16 sm:py-24 px-4 bg-white text-slate-900 transition-all duration-300">
+      <div className="max-w-6xl mx-auto space-y-10">
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/20 rounded-full text-emerald-700 dark:text-emerald-400 text-xs font-semibold uppercase tracking-widest">
-            <BookOpen className="h-4 w-4" />
-            <span>Mimbar Khatib Digital</span>
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-serif text-emerald-950 dark:text-emerald-50">
+          <h2 className="text-3xl sm:text-5xl font-bold font-serif text-emerald-950">
             Naskah Khutbah Eid
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
@@ -79,12 +75,8 @@ export const DocumentViewer: React.FC = () => {
           </button>
         </div>
 
-        {/* Document Render Container (Crisp White Paper with Black/Dark slate text) */}
-        <div className="relative bg-slate-200/50 dark:bg-[#111827]/40 border border-slate-300/40 dark:border-slate-800 rounded-3xl p-4 sm:p-8 md:p-12 shadow-inner overflow-hidden">
-          
-          <div className="absolute inset-0 bg-islamic-pattern opacity-[0.03] pointer-events-none"></div>
-
-          <div id="printable-content" className="relative z-10 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 md:p-16 shadow-xl leading-relaxed text-left max-w-4xl mx-auto text-slate-900 transition-all duration-300">
+        {/* Document Render Container simplified: white background, no boxed card */}
+        <div id="printable-content" className="relative z-10 p-6 sm:p-10 md:p-16 leading-relaxed text-left w-full mx-auto transition-all duration-300">
             
             <article className="space-y-12">
               
@@ -329,7 +321,6 @@ export const DocumentViewer: React.FC = () => {
 
             </article>
           </div>
-        </div>
       </div>
     </section>
   );

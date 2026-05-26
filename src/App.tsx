@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import InfoBoard from './components/InfoBoard';
+// InfoBoard removed per user request
 import DocumentViewer from './components/DocumentViewer';
 import Footer from './components/Footer';
 
@@ -39,8 +39,7 @@ export const App: React.FC = () => {
           {/* Stunning Welcome/Hero Greetings */}
           <Hero />
 
-          {/* Solat Ied & Qurban Details Card Board */}
-          <InfoBoard />
+          {/* Informasi sholat dihapus — langsung ke Khutbah */}
 
           {/* Double-Mode Document Viewer & PDF Download Engine */}
           <DocumentViewer />

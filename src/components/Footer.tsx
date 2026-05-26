@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#info-board" className="hover:text-emerald-400 transition-colors">
+                <a href="#sermon-section" className="hover:text-emerald-400 transition-colors">
                   Informasi Shalat
                 </a>
               </li>

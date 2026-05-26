@@ -24,9 +24,7 @@ export const Navbar: React.FC = () => {
             <a href="#hero" className="text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">
               Beranda
             </a>
-            <a href="#info-board" className="text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">
-              Informasi Ibadah
-            </a>
+            {/* Informasi Ibadah dihapus */}
             <a href="#sermon-section" className="text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">
               Khutbah
             </a>

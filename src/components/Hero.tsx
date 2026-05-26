@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
             Mulai Membaca Khutbah
           </a>
           <a
-            href="#info-board"
+            href="#sermon-section"
             className="px-8 py-3.5 rounded-2xl font-bold border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all duration-300 w-full sm:w-auto"
           >
             Informasi Shalat
