@@ -3,7 +3,7 @@ import { Calendar, MapPin, Sparkles } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 text-white py-24 sm:py-32 px-4 transition-all duration-300">
+    <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 text-white pt-16 sm:pt-20 pb-12 sm:pb-20 px-4 transition-all duration-300">
       {/* Subtle vector stars/crescents grid in background */}
       <div className="absolute inset-0 bg-islamic-pattern opacity-10 pointer-events-none"></div>
       
@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
         </h1>
 
         <p className="max-w-2xl mx-auto text-slate-200 text-base sm:text-lg lg:text-xl font-light leading-relaxed">
-          Mengenang Ketaatan Sejati Nabi Ibrahim & Keadilan Pengorbanan Nabi Isma’il 'alaihimas salaam dalam Bingkai Keimanan Murni.
+          Mengenang Ketaatan Sejati Nabi Ibrahim & Keadilan Pengorbanan Nabi Isma’il عليه السلام dalam Bingkai Keimanan Murni.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 pt-4">
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             <MapPin className="h-5 w-5 text-amber-400" />
             <div className="text-left">
               <p className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Lokasi Utama</p>
-              <p className="text-sm font-semibold">Masjid Azzumar</p>
+              <p className="text-sm font-semibold">Lapangan Masjid Azzumar</p>
             </div>
           </div>
         </div>

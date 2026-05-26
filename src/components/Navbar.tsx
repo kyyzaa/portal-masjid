@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
             <img src={Logo} alt="Masjid Az-Zumar" className="h-10 sm:h-12 w-10 sm:w-12 object-contain" />
             <div>
               <span className="font-serif text-lg sm:text-xl font-bold tracking-wider text-emerald-900 dark:text-emerald-100 flex items-center">
-                MASJID AZ-ZUMAR
+                MASJID AZZUMAR
               </span>
               <p className="text-[10px] sm:text-xs text-amber-600 dark:text-amber-400 font-semibold tracking-widest uppercase">
                 Naskah Digital Khutbah Idul Adha
