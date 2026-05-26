@@ -11,7 +11,7 @@ export const InfoBoard: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
           <p className="max-w-xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base font-light">
-            Jadwal pelaksanaan Shalat Idul Adha dan ketentuan jamaah Masjid Al-Ikhlas 1447 H.
+            Jadwal pelaksanaan Shalat Idul Adha dan ketentuan jamaah Masjid Az-Zumar 1447 H.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export const InfoBoard: React.FC = () => {
               <MapPin className="h-5.5 w-5.5 text-amber-500 mt-0.5 shrink-0" />
               <div>
                 <p className="font-bold text-slate-700 dark:text-slate-200">Tempat Pelaksanaan</p>
-                <p className="text-slate-500 dark:text-slate-400 text-sm">Lapangan Utama & Masjid Raya Al-Ikhlas</p>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">Lapangan Utama & Masjid Raya Az-Zumar</p>
               </div>
             </div>
 

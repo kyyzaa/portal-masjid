@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             <Calendar className="h-5 w-5 text-amber-400" />
             <div className="text-left">
               <p className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Tanggal Kegiatan</p>
-              <p className="text-sm font-semibold">10 Dzulhijjah 1447 H (2026 M)</p>
+              <p className="text-sm font-semibold">27 Mei 2026</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             <MapPin className="h-5 w-5 text-amber-400" />
             <div className="text-left">
               <p className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Lokasi Utama</p>
-              <p className="text-sm font-semibold">Masjid Raya & Lapangan Al-Ikhlas</p>
+              <p className="text-sm font-semibold">Masjid Az-Zumar</p>
             </div>
           </div>
         </div>

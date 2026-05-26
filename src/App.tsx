@@ -6,7 +6,7 @@ import DocumentViewer from './components/DocumentViewer';
 import Footer from './components/Footer';
 
 export const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(() => {
+  const [darkMode] = useState<boolean>(() => {
     // Check local storage or system preference on load
     const saved = localStorage.getItem('theme');
     if (saved) return saved === 'dark';

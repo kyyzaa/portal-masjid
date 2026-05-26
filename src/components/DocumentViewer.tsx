@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, BookOpen, ChevronRight, RefreshCw } from 'lucide-react';
+import { Download, ChevronRight, RefreshCw } from 'lucide-react';
 import { sermonData } from '../data/sermon';
 
 export const DocumentViewer: React.FC = () => {
