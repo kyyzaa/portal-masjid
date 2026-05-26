@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
                 MASJID AZZUMAR
               </span>
               <p className="text-[10px] sm:text-xs text-amber-600 dark:text-amber-400 font-semibold tracking-widest uppercase">
-                Naskah Digital Khutbah Idul Adha
+                Naskah Digital Khutbah Iedul Adha
               </p>
             </div>
           </div>

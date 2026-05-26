@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
       <div className="max-w-5xl mx-auto text-center relative z-10 space-y-8">
         <div className="inline-flex items-center space-x-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-400 text-xs sm:text-sm font-semibold tracking-wider uppercase animate-bounce">
           <Sparkles className="h-4 w-4" />
-          <span>Selamat Hari Raya Idul Adha 1447 H</span>
+          <span>Selamat Hari Raya Iedul Adha 1447 H</span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-serif text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-200 drop-shadow-md">

@@ -57,7 +57,7 @@ export interface SermonData {
 export const sermonData: SermonData = {
   title: "Tauhid dan Cinta",
   author: "Ustadz H Jundi Abu Daud Lc MA",
-  category: "Khutbah Idul Adha",
+  category: "Khutbah Iedul Adha",
   arabicOpening: [
     "إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا وسيئات أعمالنا من يهد الله فلا mضل له ومن يضلله فلا هادي له, أشهد أن لا إله إلا الله وحده لا شريك له, وأشهد أن محمدا عبده ورسوله",
     "جعلني الله وإياكم تحت قوله جل في علاه: يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً فَادْخُلِي فِي عِبَادِي وَادْخُلِي جَنَّتِي"
