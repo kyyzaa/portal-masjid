@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', Georgia, serif;
+    --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Custom typography settings */
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+    direction: rtl;
+    line-height: 1.8;
+  }
+}
+
+/* Islamic repeating geometric background pattern */
+.bg-islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 0l40 40-40 40L0 40z' fill='none' stroke='%23059669' stroke-opacity='0.04' stroke-width='1.5'/%3E%3Ccircle cx='40' cy='40' r='10' fill='none' stroke='%23d97706' stroke-opacity='0.06' stroke-width='1.5'/%3E%3Cpath d='M40 10l10 10-10 10-10-10z' fill='none' stroke='%23d97706' stroke-opacity='0.04' stroke-width='1'/%3E%3Cpath d='M40 50l10 10-10 10-10-10z' fill='none' stroke='%23d97706' stroke-opacity='0.04' stroke-width='1'/%3E%3Cpath d='M10 40l10 10-10 10-10-10z' fill='none' stroke='%23d97706' stroke-opacity='0.04' stroke-width='1'/%3E%3Cpath d='M50 40l10 10-10 10-10-10z' fill='none' stroke='%23d97706' stroke-opacity='0.04' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+.dark .bg-islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 0l40 40-40 40L0 40z' fill='none' stroke='%2334d399' stroke-opacity='0.03' stroke-width='1.5'/%3E%3Ccircle cx='40' cy='40' r='10' fill='none' stroke='%23fbbf24' stroke-opacity='0.04' stroke-width='1.5'/%3E%3Cpath d='M40 10l10 10-10 10-10-10z' fill='none' stroke='%23fbbf24' stroke-opacity='0.03' stroke-width='1'/%3E%3Cpath d='M40 50l10 10-10 10-10-10z' fill='none' stroke='%23fbbf24' stroke-opacity='0.03' stroke-width='1'/%3E%3Cpath d='M10 40l10 10-10 10-10-10z' fill='none' stroke='%23fbbf24' stroke-opacity='0.03' stroke-width='1'/%3E%3Cpath d='M50 40l10 10-10 10-10-10z' fill='none' stroke='%23fbbf24' stroke-opacity='0.03' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/* Elegant gold/green glowing transitions */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(217, 119, 6, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(5, 150, 105, 0.15);
+}
+
+.glow-gold-hover:hover {
+  box-shadow: 0 0 30px rgba(217, 119, 6, 0.25);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #059669;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #047857;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* PDF Print styling overrides */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
